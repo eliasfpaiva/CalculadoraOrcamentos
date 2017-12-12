@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NeoTech</string>
+    <string name="valorOrcamentoInicial">Valor do Orçamento Inicial (R$)</string>
+    <string name="margemLucro">Margem de lucro (%)</string>
+    <string name="taxaTributaria">Taxa Tributária (%)</string>
+    <string name="resultados">RESULTADOS</string>
+    <string name="valorLucro">Valor do Lucro (R$)</string>
+    <string name="valorTributos">Valor dos Tributos (R$)</string>
+    <string name="valorFinalOrcamento">Valor Final do Orçamento (R$)</string>
+    <string name="calcular">CALCULAR</string>
+</resources>
