@@ -1,0 +1,13 @@
+C:\Users\Familia Paiva\Desktop\NeoTech\NeoTech\bin\Debug\NeoTech.exe.config
+C:\Users\Familia Paiva\Desktop\NeoTech\NeoTech\bin\Debug\NeoTech.exe.manifest
+C:\Users\Familia Paiva\Desktop\NeoTech\NeoTech\bin\Debug\NeoTech.application
+C:\Users\Familia Paiva\Desktop\NeoTech\NeoTech\bin\Debug\NeoTech.exe
+C:\Users\Familia Paiva\Desktop\NeoTech\NeoTech\bin\Debug\NeoTech.pdb
+C:\Users\Familia Paiva\Desktop\NeoTech\NeoTech\obj\Debug\NeoTech.Form1.resources
+C:\Users\Familia Paiva\Desktop\NeoTech\NeoTech\obj\Debug\NeoTech.Properties.Resources.resources
+C:\Users\Familia Paiva\Desktop\NeoTech\NeoTech\obj\Debug\NeoTech.csproj.GenerateResource.Cache
+C:\Users\Familia Paiva\Desktop\NeoTech\NeoTech\obj\Debug\NeoTech.csproj.CoreCompileInputs.cache
+C:\Users\Familia Paiva\Desktop\NeoTech\NeoTech\obj\Debug\NeoTech.exe.manifest
+C:\Users\Familia Paiva\Desktop\NeoTech\NeoTech\obj\Debug\NeoTech.application
+C:\Users\Familia Paiva\Desktop\NeoTech\NeoTech\obj\Debug\NeoTech.exe
+C:\Users\Familia Paiva\Desktop\NeoTech\NeoTech\obj\Debug\NeoTech.pdb
