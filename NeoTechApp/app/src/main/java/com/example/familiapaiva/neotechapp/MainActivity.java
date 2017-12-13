@@ -1,5 +1,6 @@
 package com.example.familiapaiva.neotechapp;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    @SuppressLint("DefaultLocale")
     public void calcular(){
         try
 
@@ -21,7 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             EditText orcamento   = (EditText) findViewById(R.id.campo_orcamento_inicial);
             EditText margemLucro = (EditText) findViewById(R.id.campo_margem_lucro);
-            EditText taxaTributo = (EditText) findViewById(R.id.campo_margem_lucro);
+            EditText taxaTributo = (EditText) findViewById(R.id.campo_taxa_tributaria);
 
             String sOrcamento   = orcamento  .getText().toString();
             String sMargemLucro = margemLucro.getText().toString();
@@ -30,9 +32,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             double dOrcamento   = Double.parseDouble(sOrcamento);
             double dMargemLucro = Double.parseDouble(sMargemLucro);
             double dTaxaTributo = Double.parseDouble(sTaxaTributo);
-
-            //Valores negativos não são aceitos
-            if (dOrcamento < 0 || dMargemLucro < 0 || dTaxaTributo < 0) { throw new UnderZeroException(); }
 
             //Tributo não pode ter valor superior a 100%
             if (dTaxaTributo > 100) { throw new OverValueException(); }
@@ -57,21 +56,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             //O valor do tributo é dado pela porcentagem do orçamento final
             double valorTributo = valorFinal * (dTaxaTributo / 100);
 
-            TextView campoValorLucro = (TextView) findViewById(R.id.campo_valor_lucro);
-            TextView campoValorTributo = (TextView) findViewById(R.id.campo_valor_tributos);
+            TextView campoValorLucro     = (TextView) findViewById(R.id.campo_valor_lucro);
+            TextView campoValorTributo   = (TextView) findViewById(R.id.campo_valor_tributos);
             TextView campoOrcamentoFinal = (TextView) findViewById(R.id.campo_valor_final_orcamento);
 
             campoValorLucro    .setText(String.format("%.2f", lucro));
             campoValorTributo  .setText(String.format("%.2f", valorTributo));
             campoOrcamentoFinal.setText(String.format("%.2f", valorFinal));
-        }
-        catch (NumberFormatException fe)
-        {
-            Toast.makeText(this,"Só são aceitos valores numéricos.", Toast.LENGTH_SHORT).show();
-        }
-        catch (UnderZeroException uz)
-        {
-            Toast.makeText(this,"Orçamento, lucro e tributo não podem ser negativos.", Toast.LENGTH_SHORT).show();
         }
         catch (OverValueException ov)
         {
