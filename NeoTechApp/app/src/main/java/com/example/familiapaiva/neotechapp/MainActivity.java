@@ -1,8 +1,10 @@
 package com.example.familiapaiva.neotechapp;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -13,6 +15,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         try
 
         {
+            InputMethodManager imm = (InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+
             EditText orcamento   = (EditText) findViewById(R.id.campo_orcamento_inicial);
             EditText margemLucro = (EditText) findViewById(R.id.campo_margem_lucro);
             EditText taxaTributo = (EditText) findViewById(R.id.campo_margem_lucro);
