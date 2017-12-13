@@ -3,6 +3,7 @@ package com.example.familiapaiva.neotechapp;
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
@@ -50,12 +51,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             //para garantir que o restante(valor descontando o tributo) seja o valor desejado para a
             //soma de Orçamento inicial com lucro desejado.
 
-
-
             double valorDesejado = dOrcamento + lucro;
             double valorFinal = (100 * valorDesejado) / (100 - dTaxaTributo);
-
-
 
             //O valor do tributo é dado pela porcentagem do orçamento final
             double valorTributo = valorFinal * (dTaxaTributo / 100);
@@ -68,27 +65,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             campoValorTributo  .setText(String.format("%.2f", valorTributo));
             campoOrcamentoFinal.setText(String.format("%.2f", valorFinal));
         }
-
         catch (NumberFormatException fe)
-
         {
             Toast.makeText(this,"Só são aceitos valores numéricos.", Toast.LENGTH_SHORT).show();
         }
-
         catch (UnderZeroException uz)
-
         {
             Toast.makeText(this,"Orçamento, lucro e tributo não podem ser negativos.", Toast.LENGTH_SHORT).show();
         }
-
         catch (OverValueException ov)
-
         {
             Toast.makeText(this,"Taxa tributária nunca pode ser superior a 100%.", Toast.LENGTH_SHORT).show();
         }
-
         catch (Exception e)
-
         {
             Toast.makeText(this,"Todos os campos devem ser preenchidos corretamente", Toast.LENGTH_SHORT).show();
         }
@@ -110,4 +99,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
         }
     }
+
+    // TODO: 13/12/2017 Implementar botões de limpar e de mais informações 
 }

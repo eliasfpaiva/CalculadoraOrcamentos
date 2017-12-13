@@ -8,4 +8,6 @@
     <string name="valorTributos">Valor dos Tributos (R$)</string>
     <string name="valorFinalOrcamento">Valor Final do Orçamento (R$)</string>
     <string name="calcular">CALCULAR</string>
+    <string name="mais">Mais</string>
+    <string name="limpar">Limpar</string>
 </resources>
