@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.com.clientechattcc.MainActivity" >
+
     <item
-        android:id="@+id/btn_mais"
+        android:id="@+id/action_settings"
         android:icon="@drawable/mais"
-        android:title="@string/mais"
         android:orderInCategory="100"
+        android:title="@string/mais"
         app:showAsAction="always"/>
+
 </menu>
