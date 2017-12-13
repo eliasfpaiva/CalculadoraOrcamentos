@@ -40,7 +40,8 @@
         android:id="@+id/btn_calcular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorGreen"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFFFFF"
         android:layout_margin="5dp"
         android:text="@string/calcular"/>
 
@@ -91,6 +92,7 @@
         android:id="@+id/campo_valor_final_orcamento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textAlignment="center"
         android:layout_margin="5dp"/>
 
 </LinearLayout>
